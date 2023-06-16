@@ -304,12 +304,6 @@ SWIFT_CLASS("_TtC3SDK3API")
 @end
 
 
-SWIFT_CLASS("_TtC3SDK19AsyncLocationStream")
-@interface AsyncLocationStream : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC3SDK5UUIDs")
 @interface UUIDs : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

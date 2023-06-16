@@ -759,197 +759,6 @@
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "SDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Wgs84Reference",
-        "printedName": "Wgs84Reference",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Wgs84Reference",
-                "printedName": "SDK.Wgs84Reference",
-                "usr": "s:3SDK14Wgs84ReferenceC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:3SDK14Wgs84ReferenceC6sharedACvpZ",
-            "mangledName": "$s3SDK14Wgs84ReferenceC6sharedACvpZ",
-            "moduleName": "SDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Wgs84Reference",
-                    "printedName": "SDK.Wgs84Reference",
-                    "usr": "s:3SDK14Wgs84ReferenceC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:3SDK14Wgs84ReferenceC6sharedACvgZ",
-                "mangledName": "$s3SDK14Wgs84ReferenceC6sharedACvgZ",
-                "moduleName": "SDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:3SDK14Wgs84ReferenceC",
-        "mangledName": "$s3SDK14Wgs84ReferenceC",
-        "moduleName": "SDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ObservableObject",
-            "printedName": "ObservableObject",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ObjectWillChangePublisher",
-                "printedName": "ObjectWillChangePublisher",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObservableObjectPublisher",
-                    "printedName": "Combine.ObservableObjectPublisher",
-                    "usr": "s:7Combine25ObservableObjectPublisherC"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7Combine16ObservableObjectP",
-            "mangledName": "$s7Combine16ObservableObjectP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Encoder",
-        "printedName": "Encoder",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "encodeByte",
-            "printedName": "encodeByte(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt8",
-                "printedName": "Swift.UInt8",
-                "usr": "s:s5UInt8V"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:3SDK7EncoderC10encodeBytey10Foundation4DataVs5UInt8VFZ",
-            "mangledName": "$s3SDK7EncoderC10encodeBytey10Foundation4DataVs5UInt8VFZ",
-            "moduleName": "SDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encodeBytes",
-            "printedName": "encodeBytes(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.UInt8]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt8",
-                    "printedName": "Swift.UInt8",
-                    "usr": "s:s5UInt8V"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:3SDK7EncoderC11encodeBytesy10Foundation4DataVSays5UInt8VGFZ",
-            "mangledName": "$s3SDK7EncoderC11encodeBytesy10Foundation4DataVSays5UInt8VGFZ",
-            "moduleName": "SDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:3SDK7EncoderC",
-        "mangledName": "$s3SDK7EncoderC",
-        "moduleName": "SDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3658,28 +3467,6 @@
           },
           {
             "kind": "Function",
-            "name": "getWgs84Position",
-            "printedName": "getWgs84Position()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:3SDK3APIC16getWgs84PositionSdyYaF",
-            "mangledName": "$s3SDK3APIC16getWgs84PositionSdyYaF",
-            "moduleName": "SDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "getVersion",
             "printedName": "getVersion()",
             "children": [
@@ -4367,34 +4154,6 @@
             "declKind": "Func",
             "usr": "s:3SDK16TraceletResponseC011GetPositionC04fromAA03TL_eC0V10Foundation4DataV_tF",
             "mangledName": "$s3SDK16TraceletResponseC011GetPositionC04fromAA03TL_eC0V10Foundation4DataV_tF",
-            "moduleName": "SDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "GetStatusResponse",
-            "printedName": "GetStatusResponse(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TL_StatusResponse",
-                "printedName": "SDK.TL_StatusResponse",
-                "usr": "s:3SDK17TL_StatusResponseV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:3SDK16TraceletResponseC09GetStatusC04fromAA03TL_eC0V10Foundation4DataV_tF",
-            "mangledName": "$s3SDK16TraceletResponseC09GetStatusC04fromAA03TL_eC0V10Foundation4DataV_tF",
             "moduleName": "SDK",
             "declAttributes": [
               "AccessControl",
@@ -11016,76 +10775,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "Decoder",
-        "printedName": "Decoder",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "SDK.Decoder",
-                "usr": "s:3SDK7DecoderC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:3SDK7DecoderCACycfc",
-            "mangledName": "$s3SDK7DecoderCACycfc",
-            "moduleName": "SDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "ValidateMessage",
-            "printedName": "ValidateMessage(of:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.UInt8]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt8",
-                    "printedName": "Swift.UInt8",
-                    "usr": "s:s5UInt8V"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:3SDK7DecoderC15ValidateMessage2ofSays5UInt8VG10Foundation4DataV_tF",
-            "mangledName": "$s3SDK7DecoderC15ValidateMessage2ofSays5UInt8VG10Foundation4DataV_tF",
-            "moduleName": "SDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:3SDK7DecoderC",
-        "mangledName": "$s3SDK7DecoderC",
-        "moduleName": "SDK",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -11101,262 +10790,6 @@
         "printedName": "CoreBluetooth",
         "declKind": "Import",
         "moduleName": "SDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AsyncLocationStream",
-        "printedName": "AsyncLocationStream",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncLocationStream",
-                "printedName": "SDK.AsyncLocationStream",
-                "usr": "c:@M@SDK@objc(cs)AsyncLocationStream"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:3SDK19AsyncLocationStreamC6sharedACvpZ",
-            "mangledName": "$s3SDK19AsyncLocationStreamC6sharedACvpZ",
-            "moduleName": "SDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AsyncLocationStream",
-                    "printedName": "SDK.AsyncLocationStream",
-                    "usr": "c:@M@SDK@objc(cs)AsyncLocationStream"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:3SDK19AsyncLocationStreamC6sharedACvgZ",
-                "mangledName": "$s3SDK19AsyncLocationStreamC6sharedACvgZ",
-                "moduleName": "SDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "stream",
-            "printedName": "stream",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncStream",
-                "printedName": "_Concurrency.AsyncStream<SDK.TL_PositionResponse>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TL_PositionResponse",
-                    "printedName": "SDK.TL_PositionResponse",
-                    "usr": "s:3SDK19TL_PositionResponseV"
-                  }
-                ],
-                "usr": "s:ScS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:3SDK19AsyncLocationStreamC6streamScSyAA19TL_PositionResponseVGvp",
-            "mangledName": "$s3SDK19AsyncLocationStreamC6streamScSyAA19TL_PositionResponseVGvp",
-            "moduleName": "SDK",
-            "declAttributes": [
-              "Lazy",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AsyncStream",
-                    "printedName": "_Concurrency.AsyncStream<SDK.TL_PositionResponse>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TL_PositionResponse",
-                        "printedName": "SDK.TL_PositionResponse",
-                        "usr": "s:3SDK19TL_PositionResponseV"
-                      }
-                    ],
-                    "usr": "s:ScS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:3SDK19AsyncLocationStreamC6streamScSyAA19TL_PositionResponseVGvg",
-                "mangledName": "$s3SDK19AsyncLocationStreamC6streamScSyAA19TL_PositionResponseVGvg",
-                "moduleName": "SDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AsyncStream",
-                    "printedName": "_Concurrency.AsyncStream<SDK.TL_PositionResponse>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TL_PositionResponse",
-                        "printedName": "SDK.TL_PositionResponse",
-                        "usr": "s:3SDK19TL_PositionResponseV"
-                      }
-                    ],
-                    "usr": "s:ScS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:3SDK19AsyncLocationStreamC6streamScSyAA19TL_PositionResponseVGvs",
-                "mangledName": "$s3SDK19AsyncLocationStreamC6streamScSyAA19TL_PositionResponseVGvs",
-                "moduleName": "SDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:3SDK19AsyncLocationStreamC6streamScSyAA19TL_PositionResponseVGvM",
-                "mangledName": "$s3SDK19AsyncLocationStreamC6streamScSyAA19TL_PositionResponseVGvM",
-                "moduleName": "SDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncLocationStream",
-                "printedName": "SDK.AsyncLocationStream",
-                "usr": "c:@M@SDK@objc(cs)AsyncLocationStream"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@SDK@objc(cs)AsyncLocationStream(im)init",
-            "mangledName": "$s3SDK19AsyncLocationStreamCACycfc",
-            "moduleName": "SDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@SDK@objc(cs)AsyncLocationStream",
-        "mangledName": "$s3SDK19AsyncLocationStreamC",
-        "moduleName": "SDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -12203,1094 +11636,996 @@
       "value": "\"circle.fill\""
     },
     {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "FloatLiteral",
-      "offset": 226,
-      "length": 9,
-      "value": "6378137.0"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "FloatLiteral",
-      "offset": 269,
-      "length": 12,
-      "value": "6356752.3142"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "IntegerLiteral",
-      "offset": 351,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "IntegerLiteral",
-      "offset": 373,
-      "length": 6,
-      "value": "110000"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "IntegerLiteral",
-      "offset": 821,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "IntegerLiteral",
-      "offset": 830,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "IntegerLiteral",
-      "offset": 857,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "IntegerLiteral",
-      "offset": 922,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "IntegerLiteral",
-      "offset": 945,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1042,
-      "length": 3,
-      "value": "180"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "FloatLiteral",
-      "offset": 1767,
-      "length": 5,
-      "value": "360.0"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1785,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "FloatLiteral",
-      "offset": 1830,
-      "length": 5,
-      "value": "360.0"
-    },
-    {
-      "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/GeoTools.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1848,
-      "length": 1,
-      "value": "2"
-    },
-    {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 556,
+      "offset": 544,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 628,
+      "offset": 616,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 695,
+      "offset": 683,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 872,
+      "offset": 860,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 938,
+      "offset": 926,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "StringLiteral",
-      "offset": 1118,
+      "offset": 1100,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "StringLiteral",
-      "offset": 1174,
+      "offset": 1156,
       "length": 8,
       "value": "\"%02hhx\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "StringLiteral",
-      "offset": 1201,
+      "offset": 1183,
       "length": 39,
       "value": "\"Data package to encode: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "StringLiteral",
-      "offset": 1239,
+      "offset": 1221,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "StringLiteral",
-      "offset": 1763,
+      "offset": 1745,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "StringLiteral",
-      "offset": 1822,
+      "offset": 1804,
       "length": 8,
       "value": "\"%02hhx\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "StringLiteral",
-      "offset": 1849,
+      "offset": 1831,
       "length": 37,
       "value": "\"Encoded data package: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Encoder.swift",
       "kind": "StringLiteral",
-      "offset": 1885,
+      "offset": 1867,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 515,
+      "offset": 516,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 560,
+      "offset": 561,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 1558,
+      "offset": 1559,
       "length": 54,
       "value": "\"SDK initiated: \n  BT-state: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 1611,
+      "offset": 1612,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 3239,
+      "offset": 3240,
       "length": 39,
       "value": "\"Scan started (State: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 3276,
+      "offset": 3277,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 3366,
+      "offset": 3367,
       "length": 38,
       "value": "\"Bluetooth not available: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 3403,
+      "offset": 3404,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 3529,
+      "offset": 3530,
       "length": 40,
       "value": "\"Scan not started: Scan already running\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 3706,
+      "offset": 3707,
       "length": 46,
       "value": "\"Scan not started: State was: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 3751,
+      "offset": 3752,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "Array",
-      "offset": 3813,
+      "offset": 3814,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 4123,
+      "offset": 4124,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "Array",
-      "offset": 4442,
+      "offset": 4443,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 4495,
+      "offset": 4496,
       "length": 25,
       "value": "\"No tracelets discovered\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "Array",
-      "offset": 4549,
+      "offset": 4550,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 4619,
+      "offset": 4620,
       "length": 51,
       "value": "\"Discovered tracelets: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 4669,
+      "offset": 4670,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 4938,
+      "offset": 4994,
       "length": 14,
       "value": "\"Scan stopped\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 5084,
+      "offset": 5259,
       "length": 30,
       "value": "\"Connection attempt initiated\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 5217,
+      "offset": 5392,
       "length": 19,
       "value": "\"Already connected\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 5427,
+      "offset": 5638,
       "length": 21,
       "value": "\"start disconnecting\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 5773,
+      "offset": 6140,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 5869,
+      "offset": 6236,
       "length": 39,
       "value": "\"State must be CONNECTED to use send()\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 6139,
+      "offset": 6506,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 6365,
+      "offset": 6732,
       "length": 39,
       "value": "\"State must be CONNECTED to use send()\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 6918,
+      "offset": 7396,
       "length": 21,
       "value": "\"ShowMe - \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 6937,
+      "offset": 7415,
       "length": 2,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 7119,
+      "offset": 7668,
       "length": 23,
       "value": "\"No tracelet connected\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 7368,
+      "offset": 7917,
       "length": 31,
       "value": "\"Start Positioning - \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 7398,
+      "offset": 7947,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 7833,
+      "offset": 8447,
       "length": 30,
       "value": "\"Stop Positioning - \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 7862,
+      "offset": 8476,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 8192,
+      "offset": 8798,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 8369,
+      "offset": 8975,
       "length": 49,
       "value": "\"Channel set to:  \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 8397,
+      "offset": 9003,
       "length": 1,
       "value": "\", Success:\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 8417,
+      "offset": 9023,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 8965,
+      "offset": 9563,
       "length": 43,
       "value": "\"Interval set to:  \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 8995,
+      "offset": 9593,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 9007,
+      "offset": 9605,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 9670,
+      "offset": 10348,
       "length": 26,
       "value": "\"State is \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 9695,
+      "offset": 10373,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 9763,
+      "offset": 10441,
       "length": 18,
       "value": "\"Status requested\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 10141,
+      "offset": 10819,
       "length": 48,
       "value": "\"Status response: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 10188,
+      "offset": 10866,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 10373,
+      "offset": 11051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 10536,
+      "offset": 11214,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 10677,
+      "offset": 11355,
       "length": 94,
       "value": "\"Message found in \n Buffer: [\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 10769,
+      "offset": 11447,
       "length": 1,
       "value": "\"]\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 10947,
+      "offset": 11625,
       "length": 63,
       "value": "\"Message not found in buffer\n Buffer: [\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 11008,
+      "offset": 11686,
       "length": 1,
       "value": "\"]\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 11163,
+      "offset": 11841,
       "length": 20,
       "value": "\"Position requested\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 11275,
+      "offset": 11953,
       "length": 26,
       "value": "\"State is \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 11300,
+      "offset": 11978,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "IntegerLiteral",
-      "offset": 11913,
+      "offset": 12591,
       "length": 3,
       "value": "-50"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "IntegerLiteral",
-      "offset": 11928,
+      "offset": 12606,
       "length": 3,
       "value": "127"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 11953,
+      "offset": 12631,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 11994,
+      "offset": 12672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 12553,
+      "offset": 13241,
       "length": 26,
       "value": "\"State is \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 12578,
+      "offset": 13266,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 12974,
+      "offset": 13662,
       "length": 50,
       "value": "\"Version response: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 13023,
+      "offset": 13711,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 13199,
+      "offset": 13887,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 13363,
+      "offset": 14051,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 13505,
+      "offset": 14193,
       "length": 95,
       "value": "\"Message found in \n Buffer: [\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 13598,
+      "offset": 14286,
       "length": 1,
       "value": "\"]\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 13784,
+      "offset": 14472,
       "length": 63,
       "value": "\"Message not found in buffer\n Buffer: [\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 13845,
+      "offset": 14533,
       "length": 1,
       "value": "\"]\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "IntegerLiteral",
-      "offset": 14034,
+      "offset": 14722,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "IntegerLiteral",
-      "offset": 14320,
+      "offset": 15008,
       "length": 13,
       "value": "1000000000"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 14397,
+      "offset": 15085,
       "length": 29,
       "value": "\"Waiting time was cancelled.\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 14883,
+      "offset": 15571,
       "length": 26,
       "value": "\"positionLog\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 14904,
+      "offset": 15592,
       "length": 1,
       "value": "\".txt\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 14959,
+      "offset": 15647,
       "length": 40,
       "value": "\"shareddocuments:\/\/\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 14998,
+      "offset": 15686,
       "length": 4,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "Dictionary",
-      "offset": 15124,
+      "offset": 15812,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "IntegerLiteral",
-      "offset": 15318,
+      "offset": 16006,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "IntegerLiteral",
-      "offset": 15757,
+      "offset": 16445,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 15919,
+      "offset": 16607,
       "length": 85,
       "value": "\"X: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 15946,
+      "offset": 16634,
       "length": 1,
       "value": "\" Y: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 15973,
+      "offset": 16661,
       "length": 1,
       "value": "\" Z: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 16000,
+      "offset": 16688,
       "length": 1,
       "value": "\" \n\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "IntegerLiteral",
-      "offset": 16201,
+      "offset": 16889,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 16353,
+      "offset": 17041,
       "length": 71,
       "value": "\"role: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 16374,
+      "offset": 17062,
       "length": 5,
       "value": "\" panID: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 16397,
+      "offset": 17085,
       "length": 4,
       "value": "\" site: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 16421,
+      "offset": 17109,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "IntegerLiteral",
-      "offset": 16469,
+      "offset": 17157,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 16624,
+      "offset": 17312,
       "length": 33,
       "value": "\"version: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 16652,
+      "offset": 17340,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "IntegerLiteral",
-      "offset": 16846,
+      "offset": 17534,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17119,
+      "offset": 17808,
       "length": 27,
       "value": "\"BT changed to \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17145,
+      "offset": 17834,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17267,
+      "offset": 17956,
       "length": 27,
       "value": "\"BT changed to \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17293,
+      "offset": 17982,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17375,
+      "offset": 18064,
       "length": 27,
       "value": "\"BT changed to \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17401,
+      "offset": 18090,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17486,
+      "offset": 18175,
       "length": 27,
       "value": "\"BT changed to \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17512,
+      "offset": 18201,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17596,
+      "offset": 18285,
       "length": 27,
       "value": "\"BT changed to \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17622,
+      "offset": 18311,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17702,
+      "offset": 18391,
       "length": 27,
       "value": "\"BT changed to \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 17728,
+      "offset": 18417,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 18279,
+      "offset": 18969,
       "length": 7,
       "value": "\"dwTag\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 18291,
+      "offset": 18981,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 18326,
+      "offset": 19016,
       "length": 9,
       "value": "\"dw3kTag\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 18340,
+      "offset": 19030,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 18442,
+      "offset": 19132,
       "length": 17,
       "value": "\"already in list\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 18522,
+      "offset": 19212,
       "length": 21,
       "value": "\"Tracelet discovered\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 18681,
+      "offset": 19371,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 19028,
+      "offset": 19719,
       "length": 54,
       "value": "\"Connected to: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 19081,
+      "offset": 19772,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 19133,
+      "offset": 19824,
       "length": 8,
       "value": "\"unkown\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 19835,
+      "offset": 20527,
       "length": 62,
       "value": "\"Services discovered: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 19872,
+      "offset": 20564,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 19896,
+      "offset": 20588,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 20474,
+      "offset": 21167,
       "length": 51,
       "value": "\"Discovered characteristic: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 20524,
+      "offset": 21217,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 20722,
+      "offset": 21415,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 21025,
+      "offset": 21718,
       "length": 51,
       "value": "\"Discovered characteristic: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 21075,
+      "offset": 21768,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 21728,
+      "offset": 22422,
       "length": 18,
       "value": "\"No data received\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 22118,
+      "offset": 22812,
       "length": 26,
       "value": "\"Unknown message: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 22143,
+      "offset": 22837,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 22426,
+      "offset": 23121,
       "length": 38,
       "value": "\"Disconnected tracelet: \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 22463,
+      "offset": 23158,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "BooleanLiteral",
-      "offset": 22605,
+      "offset": 23300,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 22632,
+      "offset": 23327,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/API.swift",
       "kind": "StringLiteral",
-      "offset": 22957,
+      "offset": 23653,
       "length": 19,
       "value": "\"failed to connect\""
     },
@@ -13514,266 +12849,266 @@
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 3889,
+      "offset": 3883,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "StringLiteral",
-      "offset": 3957,
+      "offset": 3951,
       "length": 25,
       "value": "\"Message is not a status\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4026,
+      "offset": 4020,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4116,
+      "offset": 4110,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4191,
+      "offset": 4185,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4195,
+      "offset": 4189,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4260,
+      "offset": 4254,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4264,
+      "offset": 4258,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4327,
+      "offset": 4321,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4331,
+      "offset": 4325,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4398,
+      "offset": 4392,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4402,
+      "offset": 4396,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4468,
+      "offset": 4462,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4472,
+      "offset": 4466,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4538,
+      "offset": 4532,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4543,
+      "offset": 4537,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4607,
+      "offset": 4601,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4682,
+      "offset": 4676,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4746,
+      "offset": 4740,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4796,
+      "offset": 4790,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4849,
+      "offset": 4843,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4898,
+      "offset": 4892,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 4948,
+      "offset": 4942,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 5000,
+      "offset": 4994,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 5005,
+      "offset": 4999,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 5064,
+      "offset": 5058,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "StringLiteral",
-      "offset": 5346,
+      "offset": 5340,
       "length": 66,
       "value": "\"0x\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 5407,
+      "offset": 5401,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "StringLiteral",
-      "offset": 5411,
+      "offset": 5405,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "StringLiteral",
-      "offset": 5533,
+      "offset": 5527,
       "length": 66,
       "value": "\"0x\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 5594,
+      "offset": 5588,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "StringLiteral",
-      "offset": 5598,
+      "offset": 5592,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "StringLiteral",
-      "offset": 5716,
+      "offset": 5710,
       "length": 66,
       "value": "\"0x\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 5777,
+      "offset": 5771,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "StringLiteral",
-      "offset": 5781,
+      "offset": 5775,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "IntegerLiteral",
-      "offset": 8341,
+      "offset": 8335,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "StringLiteral",
-      "offset": 8592,
+      "offset": 8586,
       "length": 46,
       "value": "\"Received unknown response to version request\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/TraceletResponses.swift",
       "kind": "StringLiteral",
-      "offset": 8687,
+      "offset": 8681,
       "length": 2,
       "value": "\"\""
     },
@@ -14179,91 +13514,91 @@
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 540,
+      "offset": 522,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "StringLiteral",
-      "offset": 624,
+      "offset": 606,
       "length": 15,
       "value": "\"No Start Byte\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "StringLiteral",
-      "offset": 843,
+      "offset": 825,
       "length": 14,
       "value": "\"No Stop Byte\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 985,
+      "offset": 967,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1737,
+      "offset": 1719,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1742,
+      "offset": 1724,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "Array",
-      "offset": 1812,
+      "offset": 1794,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "StringLiteral",
-      "offset": 1880,
+      "offset": 1862,
       "length": 8,
       "value": "\"%02hhX\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "StringLiteral",
-      "offset": 1891,
+      "offset": 1873,
       "length": 8,
       "value": "\"%02hhx\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "StringLiteral",
-      "offset": 2045,
+      "offset": 2027,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Decoder.swift",
       "kind": "StringLiteral",
-      "offset": 2070,
+      "offset": 2052,
       "length": 6,
       "value": "\"%02x\""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Location.swift",
       "kind": "StringLiteral",
-      "offset": 711,
+      "offset": 715,
       "length": 41,
       "value": "\"Stream terminated with status \""
     },
     {
       "filePath": "\/Users\/christophscherbeck\/ios-sdk\/SDK\/Controller\/Location.swift",
       "kind": "StringLiteral",
-      "offset": 751,
+      "offset": 755,
       "length": 2,
       "value": "\"\""
     },

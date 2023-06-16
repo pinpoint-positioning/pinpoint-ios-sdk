@@ -19,7 +19,7 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         
-    .binaryTarget(name: "pinpoint-sdk", url: "https://github.com/pinpoint-positioning/pinpoint-ios-sdk/releases/download/0.0.1/pinpoint-sdk.xcframework.zip", checksum: "7ab6d7052acab8e52f5aa372fc9c17d869f2d80a56de763d0e3375107bbd1ec1")
+    .binaryTarget(name: "pinpoint-sdk", url: "https://github.com/pinpoint-positioning/pinpoint-ios-sdk/releases/download/0.0.3/pinpoint-sdk.xcframework.zip", checksum: "f0a1ddbf624d0a081f1ec9c971f3b52156ba85b58ca72c6c08d4c7385ed61d8b")
 
     ]
 )

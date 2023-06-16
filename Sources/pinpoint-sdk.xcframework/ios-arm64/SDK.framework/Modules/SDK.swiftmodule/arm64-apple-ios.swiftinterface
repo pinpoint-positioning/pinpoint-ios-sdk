@@ -29,16 +29,6 @@ public struct SFSymbols {
   public static let CHECKMARK_NOT_FILLED: Swift.String
   public static let CIRCLE_FILLED: Swift.String
 }
-@_hasMissingDesignatedInitializers public class Wgs84Reference : Foundation.ObservableObject {
-  public static let shared: SDK.Wgs84Reference
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class Encoder {
-  public static func encodeByte(_ byte: Swift.UInt8) -> Foundation.Data
-  public static func encodeBytes(_ bytes: [Swift.UInt8]) -> Foundation.Data
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers public class API : ObjectiveC.NSObject, CoreBluetooth.CBCentralManagerDelegate, CoreBluetooth.CBPeripheralDelegate, Foundation.ObservableObject {
   public static let shared: SDK.API
   @Combine.Published @_projectedValueProperty($allResponses) public var allResponses: Swift.String {
@@ -171,9 +161,6 @@ public struct SFSymbols {
   public func requestPosition()
   public func inProximity(_ RSSI: Foundation.NSNumber) -> Swift.Bool
   #if compiler(>=5.3) && $AsyncAwait
-  public func getWgs84Position() async -> Swift.Double
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func getVersion() async -> Swift.String?
   #endif
   public func storeInBuffer(data: SDK.BufferElement)
@@ -198,7 +185,6 @@ public struct SFSymbols {
 public class TraceletResponse {
   public init()
   public func GetPositionResponse(from byteArray: Foundation.Data) -> SDK.TL_PositionResponse
-  public func GetStatusResponse(from byteArray: Foundation.Data) -> SDK.TL_StatusResponse
   public func getVersionResponse(from byteArray: Foundation.Data) -> SDK.TL_VersionResponse
   @objc deinit
 }
@@ -353,20 +339,6 @@ public struct Map : Swift.Codable {
   public var uwbChannel: Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
-}
-public class Decoder {
-  public init()
-  public func ValidateMessage(of byteArray: Foundation.Data) -> [Swift.UInt8]
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers public class AsyncLocationStream : ObjectiveC.NSObject {
-  public static let shared: SDK.AsyncLocationStream
-  public var stream: _Concurrency.AsyncStream<SDK.TL_PositionResponse> {
-    get
-    set
-  }
-  @objc override dynamic public init()
-  @objc deinit
 }
 public struct ProtocolConstants {
   public static let startByte: Swift.UInt8

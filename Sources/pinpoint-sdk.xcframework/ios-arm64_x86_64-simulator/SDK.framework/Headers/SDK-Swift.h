@@ -304,12 +304,6 @@ SWIFT_CLASS("_TtC3SDK3API")
 @end
 
 
-SWIFT_CLASS("_TtC3SDK19AsyncLocationStream")
-@interface AsyncLocationStream : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC3SDK5UUIDs")
 @interface UUIDs : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -626,12 +620,6 @@ SWIFT_CLASS("_TtC3SDK3API")
 - (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
 - (void)centralManager:(CBCentralManager * _Nonnull)central didDisconnectPeripheral:(CBPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
 - (void)centralManager:(CBCentralManager * _Nonnull)central didFailToConnectPeripheral:(CBPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
-@end
-
-
-SWIFT_CLASS("_TtC3SDK19AsyncLocationStream")
-@interface AsyncLocationStream : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
