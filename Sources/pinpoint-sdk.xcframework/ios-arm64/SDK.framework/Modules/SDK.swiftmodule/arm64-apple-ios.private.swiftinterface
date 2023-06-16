@@ -1,0 +1,397 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import CoreBluetooth
+import Foundation
+@_exported import SDK
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+public struct Strings {
+  public static let SCAN_STARTED: Swift.String
+  public static let SEARCH_FOR_TRACELET: Swift.String
+  public static let TRACELET_FOUND: Swift.String
+  public static let CONNECT_TO_TRACELET: Swift.String
+  public static let SCAN_STOPPED: Swift.String
+  public static let DEVICE_DISCONNECTED: Swift.String
+  public static let DEVICE_CONNECTED: Swift.String
+  public static let CONNECTION_FAILED: Swift.String
+  public static let UART_SERVICE_FOUND: Swift.String
+  public static let BLUETOOTH_IS_ON: Swift.String
+  public static let BLUETOOTH_IS_OFF: Swift.String
+}
+public struct SFSymbols {
+  public static let CHECKMARK: Swift.String
+  public static let XMARK: Swift.String
+  public static let CHECKMARK_NOT_FILLED: Swift.String
+  public static let CIRCLE_FILLED: Swift.String
+}
+@_hasMissingDesignatedInitializers public class Wgs84Reference : Foundation.ObservableObject {
+  public static let shared: SDK.Wgs84Reference
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Encoder {
+  public static func encodeByte(_ byte: Swift.UInt8) -> Foundation.Data
+  public static func encodeBytes(_ bytes: [Swift.UInt8]) -> Foundation.Data
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class API : ObjectiveC.NSObject, CoreBluetooth.CBCentralManagerDelegate, CoreBluetooth.CBPeripheralDelegate, Foundation.ObservableObject {
+  public static let shared: SDK.API
+  @Combine.Published @_projectedValueProperty($allResponses) public var allResponses: Swift.String {
+    get
+    set
+    _modify
+  }
+  public var $allResponses: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($traceletInRange) public var traceletInRange: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public var $traceletInRange: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($deviceName) public var deviceName: Swift.String {
+    get
+    set
+    _modify
+  }
+  public var $deviceName: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public var positionLog: Swift.String
+  @Combine.Published @_projectedValueProperty($generalState) public var generalState: SDK.STATE {
+    get
+    set
+    _modify
+  }
+  public var $generalState: Combine.Published<SDK.STATE>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($scanState) public var scanState: SDK.STATE {
+    get
+    set
+    _modify
+  }
+  public var $scanState: Combine.Published<SDK.STATE>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($comState) public var comState: SDK.STATE {
+    get
+    set
+    _modify
+  }
+  public var $comState: Combine.Published<SDK.STATE>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($bleState) public var bleState: SDK.BLE_State {
+    get
+    set
+    _modify
+  }
+  public var $bleState: Combine.Published<SDK.BLE_State>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($localPosition) public var localPosition: SDK.TL_PositionResponse {
+    get
+    set
+    _modify
+  }
+  public var $localPosition: Combine.Published<SDK.TL_PositionResponse>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($status) public var status: SDK.TL_StatusResponse {
+    get
+    set
+    _modify
+  }
+  public var $status: Combine.Published<SDK.TL_StatusResponse>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($version) public var version: SDK.TL_VersionResponse {
+    get
+    set
+    _modify
+  }
+  public var $version: Combine.Published<SDK.TL_VersionResponse>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($connectedTracelet) public var connectedTracelet: CoreBluetooth.CBPeripheral? {
+    get
+    set
+    _modify
+  }
+  public var $connectedTracelet: Combine.Published<CoreBluetooth.CBPeripheral?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public var messageBuffer: [SDK.BufferElement]
+  @objc override dynamic public init()
+  public func scan(timeout: Swift.Double, completion: @escaping (([CoreBluetooth.CBPeripheral]) -> Swift.Void))
+  public func stopScan()
+  public func connect(device: CoreBluetooth.CBPeripheral)
+  public func disconnect()
+  public func showMe(tracelet: CoreBluetooth.CBPeripheral)
+  public func startPositioning()
+  public func stopPositioning()
+  #if compiler(>=5.3) && $AsyncAwait
+  public func setChannel(channel: Swift.Int8) async -> Swift.Bool
+  #endif
+  public func setPositioningInterval(interval: Swift.Int8)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getStatus() async -> SDK.TL_StatusResponse?
+  #endif
+  public func requestPosition()
+  public func inProximity(_ RSSI: Foundation.NSNumber) -> Swift.Bool
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getWgs84Position() async -> Swift.Double
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getVersion() async -> Swift.String?
+  #endif
+  public func storeInBuffer(data: SDK.BufferElement)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func freezeBuffer() async -> [SDK.BufferElement]
+  #endif
+  public func openDir()
+  public func clearLogFile()
+  public func ClassifyResponse(from byteArray: Foundation.Data)
+  public func getCmdByte(from data: Foundation.Data) -> Swift.UInt8
+  @objc public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didConnect peripheral: CoreBluetooth.CBPeripheral)
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverServices error: (any Swift.Error)?)
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverCharacteristicsFor service: CoreBluetooth.CBService, error: (any Swift.Error)?)
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didUpdateValueFor characteristic: CoreBluetooth.CBCharacteristic, error: (any Swift.Error)?)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDisconnectPeripheral peripheral: CoreBluetooth.CBPeripheral, error: (any Swift.Error)?)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didFailToConnect peripheral: CoreBluetooth.CBPeripheral, error: (any Swift.Error)?)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public class TraceletResponse {
+  public init()
+  public func GetPositionResponse(from byteArray: Foundation.Data) -> SDK.TL_PositionResponse
+  public func GetStatusResponse(from byteArray: Foundation.Data) -> SDK.TL_StatusResponse
+  public func getVersionResponse(from byteArray: Foundation.Data) -> SDK.TL_VersionResponse
+  @objc deinit
+}
+public protocol Response {
+  var postion: SDK.TL_PositionResponse { get }
+  var status: SDK.TL_StatusResponse { get }
+  var version: SDK.TL_VersionResponse { get }
+}
+public enum STATE {
+  case IDLE
+  case SCANNING
+  case CONNECTING
+  case CONNECTED
+  case DISCONNECTED
+  case WAITING_FOR_POSITION
+  case WAITING_FOR_STATUS
+  case WAITING_FOR_VERSION
+  case WAITING_FOR_RESPONSE
+  case SHOW_ME
+  case APPROACHED
+  case GOT_RXSERVICE
+  case GOT_CHARACTERISTICS
+  case UNKNOWN
+  case INITIALIZED
+  case PAUSED
+  case AWAIT_RESPONSE
+  case NO_RESPONSE
+  public static func == (a: SDK.STATE, b: SDK.STATE) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BLE_State {
+  case BT_OK
+  case BT_NA
+  case UNKNOWN
+  public static func == (a: SDK.BLE_State, b: SDK.BLE_State) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum Role {
+  case NR_MONITOR
+  case NR_NODE30
+  case NR_TAG30
+  case NR_SATLET30
+  case NR_UNDEFINED
+  public static func == (a: SDK.Role, b: SDK.Role) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public func parseRole(byte: Swift.Int8) -> Swift.String
+public func parseRoleToString(role: SDK.Role) -> Swift.String
+public enum BatteryStatus {
+  case BAT_UNKNOWN
+  case BAT_EXTERNAL_SOURCE
+  case BAT_LEVEL
+  case BAT_CHARGING
+  public static func == (a: SDK.BatteryStatus, b: SDK.BatteryStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public func parseBatteryStatus(byte: Swift.UInt8) -> SDK.BatteryStatus
+public enum BatteryState {
+  case NBS_EMPTY
+  case NBS_LOW
+  case NBS_MED
+  case NBS_HIGH
+  case NBS_FULL
+  case NBS_CHARGING
+  case NBS_UNKNOWN
+  case UNDEFINED
+  public static func == (a: SDK.BatteryState, b: SDK.BatteryState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public func parseBatteryState(byte: Swift.UInt8) -> SDK.BatteryState
+@objc @_inheritsConvenienceInitializers public class UUIDs : ObjectiveC.NSObject {
+  public static let traceletDummyUUID: Foundation.UUID?
+  public static let traceletIdentifierUUID: Foundation.UUID?
+  public static let traceletBatteryService: CoreBluetooth.CBUUID
+  public static let traceletNordicUARTService: CoreBluetooth.CBUUID
+  public static let traceletRxChar: CoreBluetooth.CBUUID
+  public static let traceletTxChar: CoreBluetooth.CBUUID
+  public static let traceletBatteryLevelChar: CoreBluetooth.CBUUID
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct TL_PositionResponse : Swift.Equatable {
+  public var xCoord: Swift.Double
+  public var yCoord: Swift.Double
+  public var zCoord: Swift.Double
+  public var covXx: Swift.Double
+  public var covXy: Swift.Double
+  public var covYy: Swift.Double
+  public var siteID: Swift.String
+  public var signature: Swift.String
+  public var accuracy: Swift.Double
+  public static func == (a: SDK.TL_PositionResponse, b: SDK.TL_PositionResponse) -> Swift.Bool
+}
+public struct TL_StatusResponse {
+  public var role: Swift.String
+  public var address: Swift.String
+  public var siteIDe: Swift.String
+  public var panID: Swift.String
+  public var posX: Swift.String
+  public var posY: Swift.String
+  public var posZ: Swift.String
+  public var stateByte: Swift.String
+  public var syncStateByte: Swift.String
+  public var syncSlot: Swift.String
+  public var syncModeByte: Swift.String
+  public var motionStateByte: Swift.String
+  public var batteryState: Swift.String
+  public var batteryLevel: Swift.String
+  public var txLateCnt: Swift.String
+  public var flagsByte: Swift.String
+  public init(role: Swift.String = "", address: Swift.String = "", siteIDe: Swift.String = "", panID: Swift.String = "", posX: Swift.String = "", posY: Swift.String = "", posZ: Swift.String = "", stateByte: Swift.String = "", syncStateByte: Swift.String = "", syncSlot: Swift.String = "", syncModeByte: Swift.String = "", motionStateByte: Swift.String = "", batteryState: Swift.String = "", batteryLevel: Swift.String = "", txLateCnt: Swift.String = "", flagsByte: Swift.String = "")
+}
+public struct TL_VersionResponse {
+  public var version: Swift.String
+}
+public struct BufferElement {
+  public var timestamp: Foundation.TimeInterval
+  public var message: Foundation.Data
+}
+public struct Wgs84Position {
+}
+public struct SiteData : Swift.Codable {
+  public var map: SDK.Map
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Map : Swift.Codable {
+  public var mapFile: Swift.String
+  public var mapFileOriginX: Swift.Double
+  public var mapFileOriginY: Swift.Double
+  public var mapFileRes: Swift.Double
+  public var mapName: Swift.String
+  public var mapSiteId: Swift.String
+  public var originLatitude: Swift.Double
+  public var originLongitude: Swift.Double
+  public var originAzimuth: Swift.Double
+  public var uwbChannel: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class Decoder {
+  public init()
+  public func ValidateMessage(of byteArray: Foundation.Data) -> [Swift.UInt8]
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class AsyncLocationStream : ObjectiveC.NSObject {
+  public static let shared: SDK.AsyncLocationStream
+  public var stream: _Concurrency.AsyncStream<SDK.TL_PositionResponse> {
+    get
+    set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct ProtocolConstants {
+  public static let startByte: Swift.UInt8
+  public static let stopByte: Swift.UInt8
+  public static let escapeByte: Swift.UInt8
+  public static let xorByte: Swift.UInt8
+  public static let cmdCodeShowMe: Swift.UInt8
+  public static let cmdCodeGetStatus: Swift.UInt8
+  public static let cmdCodeGetVersion: Swift.UInt8
+  public static let cmdCodeStartPositioning: Swift.UInt8
+  public static let cmdCodeStopPositioning: Swift.UInt8
+  public static let cmdCodeSetMotionCheckIntervalResponse: Swift.UInt8
+  public static let cmdCodeSetPositioningInterval: Swift.UInt8
+  public static let cmdCodeSetChannel: Swift.UInt8
+  public static let cmdCodePosition: Swift.UInt8
+  public static let cmdCodeStatus: Swift.UInt8
+  public static let cmdCodeVersion: Swift.UInt8
+}
+extension SDK.STATE : Swift.Equatable {}
+extension SDK.STATE : Swift.Hashable {}
+extension SDK.BLE_State : Swift.Equatable {}
+extension SDK.BLE_State : Swift.Hashable {}
+extension SDK.Role : Swift.Equatable {}
+extension SDK.Role : Swift.Hashable {}
+extension SDK.BatteryStatus : Swift.Equatable {}
+extension SDK.BatteryStatus : Swift.Hashable {}
+extension SDK.BatteryState : Swift.Equatable {}
+extension SDK.BatteryState : Swift.Hashable {}
